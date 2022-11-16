@@ -8,7 +8,7 @@
 
 title: BARN
 description: "Group Repository for Tri 2"
-github_username: MuffinMan1287
+# github_username: MuffinMan1287
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "BARN"
 
@@ -34,7 +34,7 @@ url: "https://MuffinMan1287.github.io/BARN/" # the base hostname & protocol for 
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/FirstFastPage" # the subpath of your site, e.g. "/blog".
+baseurl: "/BARN" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
@@ -43,16 +43,16 @@ minima:
   #    twitter: NighthawkCoding
   #    github: nighthawkcoders
   #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
-  social_links:
-    - { platform: github, user_url: ”
-https://github.com/nighthawkcoders
-“}
-    - { platform: twitter, user_url: ”
-https://twitter.com/NighthawkCoding
-“}
-    - { platform: youtube, user_url: ”
-https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q
-“}
+#  social_links:
+#    - { platform: github, user_url: ”
+# https://github.com/nighthawkcoders
+# “}
+#    - { platform: twitter, user_url: ”
+# https://twitter.com/NighthawkCoding
+# “}
+#    - { platform: youtube, user_url: ”
+# https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q
+# “}
 # Set this to true to get LaTeX math equation support
 use_math: 
 
