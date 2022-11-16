@@ -6,15 +6,15 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: My First Fastpage
-description: "Fastpage project for AP CSP by Arnav"
+title: BARN
+description: "Group Repository for Tri 2"
 github_username: MuffinMan1287
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "FirstFastPage"
+github_repo: "BARN"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
-url: "https://MuffinMan1287.github.io/FirstFastPage/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://MuffinMan1287.github.io/BARN/" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
