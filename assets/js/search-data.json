@@ -35,6 +35,17 @@
   
     
         ,"post3": {
+            "title": "Unit 3 Section 7",
+            "content": "",
+            "url": "https://muffinman1287.github.io/BARN//BARN/csp/2022/11/28/test.html",
+            "relUrl": "/csp/2022/11/28/test.html",
+            "date": " • Nov 28, 2022"
+        }
+        
+    
+  
+    
+        ,"post4": {
             "title": "Unit 3 Sections 5-7 Hacks",
             "content": "Remember to make a copy of the lesson notebook and complete them on your own blog. Blog about any trouble which you had or what you learned. . For the Hacks, create a game based on the following requirements: Objective --&gt; The game will take a string and give it a certain number of points based on a randomly selected letter . The game will split up each part of the string and add it to a list | Using a random generator, select a letter of the alphabet to assign score the word | Using ==relational operators==, check the letters of the string with the randomly generated letter, adding points to a score if there is a match | Using a ==nested conditional== and ==relational operators==, add additional points if the randomly generated letter is uncommon(ex. &#39;q&#39;, &#39;x&#39;, &#39;y&#39;, &#39;z&#39;) | Check the total score with a ==relational operator==, and print some sort of message for the user based on their score(ex. &#39;Good job!&#39; for scoring 2 points) | . Ideas for Extra Points: . Randomly generate a number, and if the user has the designated letter that many times, award them a bonus score --&gt; Nested conditionals, relational operators | Use user input | Randomly generate a score for the user, and if their final score matches the &quot;prediction&quot;, print a message --&gt; Relational operators | . import random string = &quot;Blank&quot; # Change this! stringlist = [&quot;b&quot;, &quot;l&quot;, &quot;a&quot;, &quot;n&quot;, &quot;k&quot;] # Change this! Would be cool to use a function to do this based off string. # List with individual letters letters = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;, &#39;h&#39;, &#39;i&#39;, &#39;j&#39;, &#39;k&#39;, &#39;l&#39;, &#39;m&#39;, &#39;n&#39;, &#39;o&#39;, &#39;p&#39;, &#39;q&#39;, &#39;r&#39;, &#39;s&#39;, &#39;t&#39;, &#39;u&#39;, &#39;v&#39;, &#39;x&#39;, &#39;y&#39;, &#39;z&#39;] .",
             "url": "https://muffinman1287.github.io/BARN//BARN/csp/2022/11/28/assignment.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "AP CSP Lesson Planning",
             "content": "Our Section . We will be planning a lesson for Unit 3, Sections 5 - 7. This includes boolean expressions, conditionals, and nested conditionals. . 3.5 Boolean Expressions . 3.6 Conditionals . 3.7 Nested Conditionals .",
             "url": "https://muffinman1287.github.io/BARN//BARN/2022/11/17/lesson-plan.html",
@@ -73,17 +84,6 @@
   
 
   
-      ,"page3": {
-          "title": "Stub",
-          "content": "| Javascript Kernel Test | HTML and Javascript Table | API for Random Math Questions | . hello literally everyone . &mdash; Twitter (@Twitter) October 4, 2021",
-          "url": "https://muffinman1287.github.io/BARN//BARN/stub/",
-          "relUrl": "/stub/",
-          "date": ""
-      }
-      
-  
-
-  
 
   
 
@@ -106,7 +106,7 @@
   
 
   
-      ,"page12": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://muffinman1287.github.io/BARN//BARN/robots.txt",
