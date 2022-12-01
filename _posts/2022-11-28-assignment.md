@@ -2,7 +2,7 @@
 keywords: fastai
 description: Hacks
 title: Unit 3 Sections 5-7 Hacks
-toc: false
+toc: true
 badges: true
 comments: true
 categories: [csp]
@@ -21,27 +21,86 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Remember to make a copy of the lesson notebook and complete them on your own blog. Blog about any trouble which you had or what you learned.</p>
+<p>For hacks, <mark>make a copy of this notebook and answer the questions or complete the code</mark>, as described in comments. Additionally, <mark>blog about any missed questions</mark>, or what you learned from this lesson.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For the Hacks, create a game based on the following requirements:
-Objective --&gt; The game will take a string and give it a certain number of points based on a randomly selected letter</p>
-<ul>
-<li>The game will split up each part of the string and add it to a list</li>
-<li>Using a random generator, select a letter of the alphabet to assign score the word</li>
-<li>Using ==relational operators==, check the letters of the string with the randomly generated letter, adding points to a score if there is a match</li>
-<li>Using a ==nested conditional== and ==relational operators==, add additional points if the randomly generated letter is uncommon(ex. 'q', 'x', 'y', 'z')</li>
-<li>Check the total score with a ==relational operator==, and print some sort of message for the user based on their score(ex. 'Good job!' for scoring 2 points)</li>
+<h1 id="3.5-Hacks">3.5 Hacks<a class="anchor-link" href="#3.5-Hacks"> </a></h1><h2 id="Binary-Practice">Binary Practice<a class="anchor-link" href="#Binary-Practice"> </a></h2><h2 id="AP-Prep">AP Prep<a class="anchor-link" href="#AP-Prep"> </a></h2><h2 id="Python-Practice">Python Practice<a class="anchor-link" href="#Python-Practice"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="c1"># Practice with these statements</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">20</span> <span class="o">==</span> <span class="mi">20</span><span class="p">)</span> <span class="c1"># How can you change the operator to print a value of False?</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span><span class="p">)</span> <span class="c1"># How can this return true by only manipulating the operator?</span>
+
+<span class="c1"># Manipulate the variables x, y, and z to make the below statement return true</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="n">z</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.6-Hacks">3.6 Hacks<a class="anchor-link" href="#3.6-Hacks"> </a></h1><h2 id="AP-Prep">AP Prep<a class="anchor-link" href="#AP-Prep"> </a></h2><h2 id="Using-Python">Using Python<a class="anchor-link" href="#Using-Python"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lion&quot;</span><span class="p">,</span> <span class="s2">&quot;tiger&quot;</span><span class="p">,</span> <span class="s2">&quot;wildebeest&quot;</span><span class="p">,</span> <span class="s2">&quot;shark&quot;</span><span class="p">,</span> <span class="s2">&quot;jellyfish&quot;</span><span class="p">,</span> <span class="s2">&quot;blobfish&quot;</span><span class="p">,</span> <span class="s2">&quot;raven&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">animals</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s2">&quot;shark&quot;</span><span class="p">:</span> <span class="c1"># What boolean value does this statement cause?</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fun Fact: The smallest shark is the dwarf lantern shark, and it is small enough to hold in your hand!&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># Practice</span>
+<span class="c1"># Using only one more if statement, alter the code to print out a statement saying if an animal lives in the desert, based on booleans</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.7-Hacks">3.7 Hacks<a class="anchor-link" href="#3.7-Hacks"> </a></h1><h2 id="Exercise-1">Exercise 1<a class="anchor-link" href="#Exercise-1"> </a></h2><ul>
+<li>Create dictionaries for multiple food items, with the listed specifications<ul>
+<li>Chicken Alfredo, Meat: Chicken, Time to Prepare: 60 minutes</li>
+<li>Cheese Quesadilla, Meat: None, Time to Prepare: 10 minutes</li>
+<li>Beef Wellington, Meat: Beef, Time to Prepare: 150 minutes</li>
 </ul>
-<p>Ideas for Extra Points:</p>
-<ul>
-<li>Randomly generate a number, and if the user has the designated letter that many times, award them a bonus score --&gt; Nested conditionals, relational operators</li>
-<li>Use user input</li>
-<li>Randomly generate a score for the user, and if their final score matches the "prediction", print a message --&gt; Relational operators</li>
+</li>
+<li>Used nested conditionals, determine which meal you can cook, given that a) you have no meat at home, and b) you only have 30 minutes to make the meal</li>
 </ul>
 
 </div>
@@ -54,14 +113,7 @@ Objective --&gt; The game will take a string and give it a certain number of poi
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-
-<span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;Blank&quot;</span> <span class="c1"># Change this!</span>
-<span class="n">stringlist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;n&quot;</span><span class="p">,</span> <span class="s2">&quot;k&quot;</span><span class="p">]</span> <span class="c1"># Change this! Would be cool to use a function to do this based off string.</span>
-
-<span class="c1"># List with individual letters</span>
-<span class="n">letters</span> <span class="o">=</span> 
-<span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;j&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">]</span>
+<div class=" highlight hl-python"><pre><span></span>
 </pre></div>
 
     </div>
