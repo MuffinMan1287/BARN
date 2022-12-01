@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -137,8 +137,128 @@ window.onload = wrap_img;
 <h1 id="Unit-3-Section-7">Unit 3 Section 7<a class="anchor-link" href="#Unit-3-Section-7"> </a></h1><h2 id="Learning-Objectives">Learning Objectives<a class="anchor-link" href="#Learning-Objectives"> </a></h2><p>Write nested conditional statements Determine the result of nested conditional statement</p>
 <h2 id="Vocab">Vocab<a class="anchor-link" href="#Vocab"> </a></h2><p><mark>Nested conditional:</mark> A conditional inside of a conditional</p>
 <h3 id="Nested-Conditionals">Nested Conditionals<a class="anchor-link" href="#Nested-Conditionals"> </a></h3><p>Nested conditionals are often used in algorithms in order to print specific data or run certain tasks.</p>
-<p>We can use flowcharts to help display an easy to understand diagram of what we want a code segment to do. <img src="/BARN/images/New Flowchart.jpg" alt="Example of a flowchart" /></p>
+<p>We can use conditionals inside conditionals to create further conditions in algorithms.</p>
+<p>We can use flowcharts to help display an easy to understand diagram of what we want a code segment to do.</p>
+<p><a href="https://drive.google.com/file/d/11tJBfrTXFenYGCzFy1t2g9KMh5OoGcq5/view?usp=share_link">Flowchart</a></p>
 
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Defining dictionaries for each stock</span>
+<span class="n">apple</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;ticker&quot;</span><span class="p">:</span> <span class="s2">&quot;AAPL&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;p/e&quot;</span><span class="p">:</span> <span class="mf">24.73</span><span class="p">,</span>
+    <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">151.20</span><span class="p">,</span>
+    <span class="s2">&quot;eps&quot;</span><span class="p">:</span> <span class="mf">6.11</span><span class="p">,</span>
+    <span class="s2">&quot;volume&quot;</span><span class="p">:</span> <span class="mi">55916992</span>
+<span class="p">}</span>
+
+<span class="n">netflix</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;ticker&quot;</span><span class="p">:</span> <span class="s2">&quot;NFLX&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;p/e&quot;</span><span class="p">:</span> <span class="mf">25.96</span><span class="p">,</span>
+    <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">291.50</span><span class="p">,</span>
+    <span class="s2">&quot;eps&quot;</span><span class="p">:</span> <span class="mf">11.23</span><span class="p">,</span>
+    <span class="s2">&quot;volume&quot;</span><span class="p">:</span> <span class="mi">5814124</span>
+<span class="p">}</span>
+
+<span class="n">docusign</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;ticker&quot;</span><span class="p">:</span> <span class="s2">&quot;DOCU&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;p/e&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">85.8</span><span class="p">,</span>
+    <span class="s2">&quot;price&quot;</span><span class="p">:</span> <span class="mf">46.52</span><span class="p">,</span>
+    <span class="s2">&quot;eps&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.45</span><span class="p">,</span>
+    <span class="s2">&quot;volume&quot;</span><span class="p">:</span> <span class="mi">3332106</span>
+<span class="p">}</span>
+
+<span class="c1"># Creating function</span>
+<span class="k">def</span> <span class="nf">stockfinder</span><span class="p">(</span><span class="n">stock</span><span class="p">):</span>
+    <span class="c1"># Creating first if-else statement based on P/E ratio</span>
+    <span class="k">if</span> <span class="n">stock</span><span class="p">[</span><span class="s2">&quot;p/e&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="c1"># Going for the nested check based on price if the first if statement is satisfied</span>
+        <span class="k">if</span> <span class="n">stock</span><span class="p">[</span><span class="s2">&quot;price&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You can purchase &quot;</span> <span class="o">+</span> <span class="n">stock</span><span class="p">[</span><span class="s2">&quot;ticker&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You cannot purchase &quot;</span> <span class="o">+</span> <span class="n">stock</span><span class="p">[</span><span class="s2">&quot;ticker&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+    <span class="c1"># Function will go to this if the P/E is not greater than 5</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">stock</span><span class="p">[</span><span class="s2">&quot;ticker&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;&#39;s P/E ratio is too low.&quot;</span><span class="p">)</span>
+
+<span class="n">stockfinder</span><span class="p">(</span><span class="n">apple</span><span class="p">)</span> <span class="c1"># Will say Apple can be bought</span>
+<span class="n">stockfinder</span><span class="p">(</span><span class="n">netflix</span><span class="p">)</span> <span class="c1"># Will say Netflix is too expensive</span>
+<span class="n">stockfinder</span><span class="p">(</span><span class="n">docusign</span><span class="p">)</span> <span class="c1"># Will say DocuSign&#39;s P/E ratio is too low</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You can purchase AAPL.
+You cannot purchase NFLX.
+DOCU&#39;s P/E ratio is too low.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Practice-Questions">Practice Questions<a class="anchor-link" href="#Practice-Questions"> </a></h3><p><strong>1. Is this an example of a nested conditional?</strong></p>
+<ul>
+<li>space &lt;-- 90</li>
+<li>download &lt;-- 20</li>
+<li>IF (space &gt; download) {
+  DISPLAY("File can be downloaded.")</li>
+<li>}</li>
+</ul>
+<ol>
+<li>Yes</li>
+<li>No</li>
+</ol>
+<details closed="">
+<summary>Answer and explanation</summary>
+2. There is only one conditional statement.
+</details><p><strong>2. What does this code display?</strong></p>
+<ul>
+<li>price &lt;-- 200</li>
+<li>discount &lt;-- 65</li>
+<li>IF (price &gt; 100) {
+  IF (discount &gt; 50) {
+<pre><code>  DISPLAY("You can buy this item.")
+</code></pre>
+  }
+  ELSE {
+<pre><code>  DISPLAY("You cannot purchase this item.")
+</code></pre>
+  }
+}</li>
+</ul>
+<ol>
+<li>You cannot purchase this item.</li>
+<li>50</li>
+<li>You can buy this item.</li>
+<li>65</li>
+</ol>
+<details closed="">
+<summary>Answer and explanation</summary>
+3. The value of price is greater than a 100, which satisfies the 1st conditional. The 2nd if statement inside is satisfied, as the discount value is greater than 50. Thus the code from inside the 2nd if statement is displayed.
+</details>
 </div>
 </div>
 </div>
